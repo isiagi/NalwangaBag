@@ -1,6 +1,5 @@
 import React, { useContext, useState, useEffect, FC } from 'react';
 import Box from '@mui/material/Box';
-import img from '../../images/1.jpg';
 import { Button } from '@mui/material';
 import Multi from '../../carosouel/Multi';
 import { BagContext } from '../../context/Context';
@@ -23,7 +22,6 @@ const Detail:FC = () => {
   const {id} = useParams()
   const { addCart } = useContext(BagContext);
   const [itemz, setItem] = useState<ItemData>(Object);
-  const item = {}
 
 useEffect(() => {
   const patu = productData.filter(item => {
@@ -57,8 +55,8 @@ useEffect(() => {
               marginBottom: '20px',
             }}
           ></div>
-          <Button variant="contained" onClick={() => addCart(item)}>
-            <Link to="/cart">Add to cart</Link>
+          <Button variant="contained" onClick={() => addCart(itemz)}>
+            <Link to="/cart" style={{textDecoration: 'none', color: 'white' }}>Add to cart</Link>
           </Button>
         </Box>
       </Box>

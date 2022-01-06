@@ -27,19 +27,19 @@ const Multi = () => {
   return (
     <div>
       <Carousel responsive={responsive}>
-        <div style={{margin: '0 20px'}}>
+        <div style={{margin: '0 12px'}}>
           <Product img={productData[0].image} name={productData[0].name} price={productData[0].price}  />
         </div>
-        <div>
+        <div style={{margin: '0 12px'}}>
         <Product img={productData[1].image} name={productData[1].name} price={productData[1].price}/>
         </div>
-        <div>
+        <div style={{margin: '0 12px'}}>
         <Product img={productData[2].image} name={productData[2].name} price={productData[2].price}/>
         </div>
-        <div>
+        <div style={{margin: '0 12px'}}>
         <Product img={productData[3].image} name={productData[3].name} price={productData[3].price}/>
         </div>
-        <div>
+        <div style={{margin: '0 12px'}}>
         <Product img={productData[4].image} name={productData[4].name} price={productData[4].price}/>
         </div>
       </Carousel>

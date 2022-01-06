@@ -31,9 +31,11 @@ const HeroLeft = () => {
                   textTransform: 'capitalize',
                   textAlign: 'left',
                   fontWeight: '500',
-                  fontSize: '13px',
+                  fontSize: '15px',
                   lineHeight: '150%',
+                  textDecoration: 'none', color: 'white'
                 }}
+                href='/babies'
               >
                 {link}
               </Link>

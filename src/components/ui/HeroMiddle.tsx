@@ -1,5 +1,5 @@
 
-import img from '../images/1.jpg'
+import img from '../images/4.jpg'
 import './hero.css'
 
 const HeroMiddle = () => {

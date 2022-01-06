@@ -1,4 +1,4 @@
-import img from '../images/1.jpg'
+import img from '../images/3.jpg'
 import './hero.css'
 
 const HeroLast = () => {

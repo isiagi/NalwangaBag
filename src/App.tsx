@@ -6,16 +6,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Context } from './components/context/Context';
 import Detail from './components/ui/detail/Detail';
 import Cart from './components/ui/cart/Cart';
+import Babies from './components/ui/section/Babies'
 
 function App() {
   return (
     <div className="App">
       <Router>
-      <NavBar />
         <Context>
+      <NavBar />
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/:id" element={<Detail />} />
+            <Route path="/babies" element={<Babies />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </Context>
