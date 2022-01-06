@@ -1,0 +1,24 @@
+.hero-middle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 50px;
+  min-height: 100vh;
+  gap: 0.5em;
+}
+
+.btn {
+  padding: 15px;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.hero-middle > div > img {
+  max-width: 100%;
+  width: 518px;
+  height: 520px;
+  object-fit: cover;
+}

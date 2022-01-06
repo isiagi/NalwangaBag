@@ -1,0 +1,39 @@
+.detail__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 65px;
+    flex-wrap: wrap;
+}
+
+/* .detail__wrapper > .detail__image {
+     max-width: 100%;
+    width: 518px;
+     height: 520px;
+    object-fit: cover; 
+} */
+
+.detail__image >img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.detail__info {
+    line-height: 2em;
+}
+
+.detail__info > .color {
+    height: 2em
+}
+
+.detail__info h3, h2, h4{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 640px) {
+    .detail__image >img {
+        width: 350px;
+        height: 400px;
+    }
+}
