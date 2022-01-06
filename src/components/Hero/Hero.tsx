@@ -8,7 +8,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Pro from './Pro';
 import HeroMiddle from '../ui/HeroMiddle';
 import HeroLast from '../ui/HeroLast';
-import Select from '../ui/select/Select';
+// import Select from '../ui/select/Select';
 
 const Hero = () => {
   return (
@@ -89,7 +89,7 @@ const Hero = () => {
         <Pro />
         <HeroMiddle />
         <HeroLast />
-        <Select />
+        {/* <Select /> */}
       </Container>
     </React.Fragment>
   );
