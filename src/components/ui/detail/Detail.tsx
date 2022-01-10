@@ -4,32 +4,36 @@ import { Button } from '@mui/material';
 import Multi from '../../carosouel/Multi';
 import { BagContext } from '../../context/Context';
 import { Link } from 'react-router-dom';
-import { useParams} from 'react-router-dom';
-import {productData} from '../../API/Data'
+import { useParams } from 'react-router-dom';
+import { productData } from '../../API/Data';
 
 import './detail.css';
 import SubDetail from './SubDetail';
 
 interface ItemData {
-  id:string;
+  id: string;
   image: string;
   name: string;
   price: number;
   qty: number;
 }
 
-const Detail:FC = () => {
-  const {id} = useParams()
+const Detail: FC = () => {
+  const { id } = useParams();
   const { addCart } = useContext(BagContext);
   const [itemz, setItem] = useState<ItemData>(Object);
 
-useEffect(() => {
-  const patu = productData.filter(item => {
-    return item.id === id;
-  })
-  console.log(patu[0])
-  setItem(patu[0])
-}, [id])
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
+    const patu = productData.filter((item) => {
+      return item.id === id;
+    });
+    console.log(patu[0]);
+    setItem(patu[0]);
+  }, [id]);
 
   // const item = { item: 'bag', qty: 1, price: 5000 };
   return (
@@ -42,11 +46,13 @@ useEffect(() => {
           <h3>{itemz!.name}</h3>
           <h4>This is an elegant bag</h4>
           <h2>
-            <small>Shs</small>{itemz!.price}
+            <small>Shs</small>
+            {itemz!.price}
           </h2>
           <h4>This is a bag that blue in color with yellow leather coating </h4>
           <h5>Color</h5>
           <div
+          className="detail__c"
             style={{
               backgroundColor: 'green',
               height: '25px',
@@ -56,7 +62,9 @@ useEffect(() => {
             }}
           ></div>
           <Button variant="contained" onClick={() => addCart(itemz)}>
-            <Link to="/cart" style={{textDecoration: 'none', color: 'white' }}>Add to cart</Link>
+            <Link to="/cart" style={{ textDecoration: 'none', color: 'white' }}>
+              Add to cart
+            </Link>
           </Button>
         </Box>
       </Box>

@@ -36,4 +36,7 @@
         width: 350px;
         height: 400px;
     }
+    .detail__c {
+        margin: 0 auto;
+    }
 }

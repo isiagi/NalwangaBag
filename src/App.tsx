@@ -7,6 +7,7 @@ import { Context } from './components/context/Context';
 import Detail from './components/ui/detail/Detail';
 import Cart from './components/ui/cart/Cart';
 import Babies from './components/ui/section/Babies'
+import Footer from './components/ui/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/babies" element={<Babies />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+        <Footer />
         </Context>
       </Router>
     </div>

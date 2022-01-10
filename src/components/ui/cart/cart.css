@@ -1,6 +1,6 @@
 .cart__wrapper {
     margin-top: 90px;
-  
+    min-height: 85vh;
 }
 
 .cart__items {

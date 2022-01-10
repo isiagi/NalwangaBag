@@ -15,7 +15,7 @@ const Cart = () => {
         <p>Continue Shopping</p>
         <button>Proceed To Checkout</button>
       </div>
-      {cart.map((cart: any) => (
+      {cart.length === 0 ? <p style={{textAlign: 'center', margin: '80px 0', fontSize: '20px'}}>No Items In Cart</p> : cart.map((cart: any) => (
         <div className="cart__items">
           <div className="cart__item">
             <img src={cart.image && cart.image} alt="" width="150" />
@@ -47,7 +47,7 @@ const Cart = () => {
       <div className="cart__foot">
         <p>Continue Shopping</p>
         <div>
-          <p>Total: ${totalPrice}</p>
+          <p>Total: Shs{totalPrice}</p>
           <button>Proceed To Checkout(1 item)</button>
         </div>
       </div>
