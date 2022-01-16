@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import { Link } from '@mui/material';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
-const links = ['Ladies', 'Men', 'Babies', 'Children'];
+const links = ['Shoulder Bags', 'Satchel', 'Sling Bag', 'Quilted Bag','Clutch',  'Wallet'];
 
 const HeroLeft = () => {
   return (
