@@ -1,12 +1,19 @@
-import React from 'react'
-// import Product from '../../Hero/Hero'
- 
-const Babies = () => {
-    return (
-        <div style={{marginTop: '70px', textAlign: 'center'}}>
-            <h1>Content Coming Soon Nalwanga</h1>
-        </div>
-    )
-}
+import React from 'react';
+import Product from '../../Hero/Pro';
+import Container from '@mui/material/Container';
 
-export default Babies
+const Babies = () => {
+  return (
+    <React.Fragment>
+      <Container>
+        <div
+          style={{ marginTop: '70px', textAlign: 'center', minHeight: '90vh' }}
+        >
+          <Product />
+        </div>
+      </Container>
+    </React.Fragment>
+  );
+};
+
+export default Babies;
