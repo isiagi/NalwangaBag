@@ -10,12 +10,12 @@ const HeroMiddle = () => {
     })
     return (
         <div className="hero-middle">
-            <div data-aos="fade-right">
+            <div data-aos="fade-down">
                 <h2>Patricia Outstanding</h2>
                 <p>Practical and elegant to match the new band handle.</p>
                 <button className="btn">Shop now</button>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-up">
                 <img src={img} alt="hey" />
             </div>
         </div>
